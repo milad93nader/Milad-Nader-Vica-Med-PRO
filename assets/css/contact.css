@@ -1,0 +1,188 @@
+.hero-section {
+  height: 60px;
+  background-color: var(--White_grey, #f5f5f5);
+  padding: 18px 70px;
+  margin-top: 72px;
+  .container {
+    height: 100%;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .one {
+      max-width: 76px;
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--Dark_gray, #555555);
+    }
+    .tow {
+      max-width: 49px;
+
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--Grey, #9d9d9d);
+    }
+  }
+}
+
+#text-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 70px 70px 70px;
+  margin-bottom: 70px;
+  h1 {
+    margin-bottom: 24px;
+    font-family: "Exo", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    color: black;
+  }
+  p {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Dark_gray, #555555);
+  }
+  .location {
+    width: 783px;
+    height: 390px;
+    border-radius: 20px;
+  }
+  .phone {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .email {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+#contact {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  h2 {
+    font-family: "Exo", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    color: black;
+  }
+  p {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Dark_gray, #555555);
+    margin-bottom: 30px;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .name {
+    width: 603px;
+    height: 48px;
+    padding: 10px 16px 10px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey, #9d9d9d);
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Grey, #9d9d9d);
+  }
+  .email {
+    width: 603px;
+    height: 48px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey, #9d9d9d);
+  }
+
+  .comment {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 110px;
+    padding: 0px 16px 50px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey, #9d9d9d);
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Grey, #9d9d9d);
+    text-align: left;
+  }
+  #save {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+    color: var(--Dark_gray, #555555);
+  }
+  .checkbox-text {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Dark_gray, #555555);
+    width: 100%;
+  }
+  .form-button {
+    width: 170px;
+    height: 48px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 24px;
+    background: var(--Primary, #ff782d);
+    border: #ff782d;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--White, #ffffff);
+    margin-top: 20px;
+  }
+}
+
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width: 992px) {
+  #text-map {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+    .location {
+      width: 100%;
+      height: 100%;
+      width: 480px;
+      height: 357px;
+      border-radius: 0px;
+    }
+  }
+
+  #contact {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    .top {
+      flex-wrap: wrap;
+    }
+  }
+}
